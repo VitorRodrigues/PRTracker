@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Github from './services/github';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+export const GithubContext = React.createContext(); //Initialise
+
 root.render(
   <React.StrictMode>
-    <App />
+    <GithubContext.Provider value={new Github()}>
+      <App />
+    </GithubContext.Provider>
   </React.StrictMode>
 );
 

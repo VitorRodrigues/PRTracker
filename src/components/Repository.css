@@ -1,0 +1,16 @@
+.repository-wrapper {
+    padding: 16pt;
+    border: 2px solid goldenrod;
+    /* background-color: rgb(205, 172, 87); */
+}
+
+.repository-title {
+    font-size: 1.1em;
+}
+
+.pullrequest-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16pt;
+}
